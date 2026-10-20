@@ -1,0 +1,117 @@
+:root {
+    --fondo: #f3f6f4;
+    --texto: #1d2b27;
+    --acento: #1f6f5c;
+    --tarjeta: #ffffff;
+    --borde: #cfdad5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    padding: 3.5rem 1.5rem 2rem;
+    text-align: center;
+    background: var(--acento);
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 6vw, 3.2rem);
+    letter-spacing: 0.02em;
+}
+
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 4rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--acento);
+}
+
+ul.intereses {
+    margin: 0;
+    padding-left: 1.4rem;
+}
+
+ul.intereses li { margin-bottom: 0.3rem; }
+
+figure {
+    margin: 0;
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    background: #dfe8e4;
+}
+
+figcaption {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+}
+
+.enlaces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.enlaces a {
+    display: block;
+    padding: 1rem 1.2rem;
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-left: 5px solid var(--acento);
+    border-radius: 6px;
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlaces a:hover,
+.enlaces a:focus-visible {
+    background: var(--acento);
+    color: #fff;
+    outline: none;
+}
+/* Añadidos para subtítulo, h3 y pie de página */
+.subtitulo {
+    margin: 0.6rem 0 0;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 1.6rem 0 0.6rem;
+    color: var(--acento);
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--borde);
+}
