@@ -60,8 +60,10 @@ figure {
 figure img {
     display: block;
     width: 100%;
-    max-height: 420px;
-    object-fit: cover;
+    height: auto;
+    max-height: 560px;
+    margin: 0 auto;
+    object-fit: contain;
     background: #dfe8e4;
 }
 
